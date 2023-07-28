@@ -29,4 +29,6 @@ body,
     --text-heading-color-light: black;
     --text-regular-color-light: grey;
     --hover-light: rgb(175, 171, 171);
+    --message-own-color: #015c4b;
+    --message-other-color: grey;
 }

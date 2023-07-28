@@ -1,0 +1,32 @@
+.messageContent {
+    background-color: var(--message-other-color);
+    min-width: 40px;
+    max-width: fit-content;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.messageTriangle {
+    width: 0;
+    height: 0;
+    border-top: 8px solid var(--message-other-color);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ownMessage {
+    float: right;
+    background-color: var(--message-own-color);
+}
+
+.ownMessage .messageTriangle {
+    border-top: 8px solid var(--message-own-color);
+    left: unset;
+    right: 0;
+    transform: translateX(50%);
+}
