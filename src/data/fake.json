@@ -28,6 +28,14 @@
     "messages": [
         {
             "chatId": 123123,
+            "userId": 112,
+            "type": 0,
+            "text": "בדיקההה",
+            "sentAt": 1690558179166,
+            "read": []
+        },
+        {
+            "chatId": 123223,
             "userId": 111,
             "type": 0,
             "text": "בדיקההה",

@@ -5,6 +5,7 @@
     padding: 10px;
     position: relative;
     border-radius: 5px;
+    margin-bottom: 2px;
 }
 
 .messageTriangle {
@@ -20,7 +21,7 @@
 }
 
 .ownMessage {
-    float: right;
+    align-self: flex-end;
     background-color: var(--message-own-color);
 }
 
