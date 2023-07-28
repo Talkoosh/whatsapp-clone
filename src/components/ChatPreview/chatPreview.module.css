@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.container:hover {
+    cursor: pointer;
+    background-color: var(--hover-light);
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+}
+
+.previewText {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.chatName,
+.lastMessageText {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px;
+}
+
+.chatName {
+    font-size: var(--text-heading-size);
+    color: var(--text-heading-color-light);
+}
+
+.lastMessageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.lastMessageText {
+    font-size: var(--text-regular-size);
+    color: var(--text-regular-color-light);
+}
+
+.container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sentAt {
+    font-size: var(--text-regular-size);
+    color: var(--text-regular-color-light);
+}
+
+.hourAndArrowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.downArrow {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.container:hover .downArrow {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.08s ease-in, opacity 0.08s;
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.App {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.App {
+    text-align: center;
+}
+
+/* TEXT SIZES */
+:root {
+    --text-heading-size: 0.9rem;
+    --text-regular-size: 0.7rem;
+}
+
+/* COLORS */
+
+:root {
+    --text-heading-color-light: black;
+    --text-regular-color-light: grey;
+    --hover-light: rgb(175, 171, 171);
+}

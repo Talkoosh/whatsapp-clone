@@ -1,0 +1,28 @@
+{
+    "chats": [
+        {
+            "id": 123123,
+            "type": 1,
+            "name": "מאמן כושר ברי צקלה",
+            "lastMessage": {
+                "type": 0,
+                "text": "AAAAAAAAAAAAABBBBBBCCCC",
+                "sentAt": 1690395505669,
+                "read": {}
+            },
+            "imgSrc": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+        },
+        {
+            "id": 123223,
+            "type": 1,
+            "name": "מאמן כושר ברי צקלה",
+            "imgSrc": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+            "lastMessage": {
+                "type": 0,
+                "text": "mashu po kore po",
+                "sentAt": 1690395505669,
+                "read": {}
+            }
+        }
+    ]
+}
