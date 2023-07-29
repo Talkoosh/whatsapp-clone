@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './chat.module.css';
 import demoData from '../../data/fake.json';
 import { Message } from '../Message/Message';
+import { SendMessage } from '../SendMessage/SendMessage';
 
 export function Chat() {
     const [messages, setMessages] = useState(null);
@@ -15,6 +16,7 @@ export function Chat() {
             {messages?.map((message) => (
                 <Message message={message} />
             ))}
+            <SendMessage />
         </section>
     );
 }
