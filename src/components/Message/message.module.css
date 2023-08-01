@@ -1,18 +1,22 @@
 .messageContent {
-    background-color: var(--message-other-color);
-    min-width: 40px;
+    background-color: var(--layout-general);
+    min-width: 75px;
     max-width: fit-content;
-    padding: 10px;
+    padding: 7px;
     position: relative;
     border-radius: 5px;
     margin-bottom: 2px;
     color: white;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .messageTriangle {
     width: 0;
     height: 0;
-    border-top: 8px solid var(--message-other-color);
+    border-top: 8px solid var(--layout-general);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     transform: translateX(-50%);
@@ -31,4 +35,10 @@
     left: unset;
     right: 0;
     transform: translateX(50%);
+}
+
+.sentAt {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: var(--message-sent-at-dark);
 }

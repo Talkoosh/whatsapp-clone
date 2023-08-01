@@ -30,7 +30,7 @@ body,
     --text-regular-color-light: grey;
     --hover-light: rgb(175, 171, 171);
     --message-own-color: #015c4b;
-    --message-other-color: grey;
     --layout-general: #1f2c33;
     --message-text: #293840;
+    --message-sent-at-dark: #a3beb7;
 }
