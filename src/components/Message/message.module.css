@@ -2,7 +2,7 @@
     background-color: var(--layout-general);
     min-width: 75px;
     max-width: fit-content;
-    padding: 7px;
+    padding: 7px 5px 2px 7px;
     position: relative;
     border-radius: 5px;
     margin-bottom: 2px;

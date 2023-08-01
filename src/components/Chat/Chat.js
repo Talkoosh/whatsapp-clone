@@ -16,7 +16,7 @@ export function Chat() {
             ...prevState,
             {
                 chatId: 123123,
-                userId: 112,
+                userId: 111,
                 type: 0,
                 text: message,
                 sentAt: 1690558179166,
