@@ -5,18 +5,33 @@ import { Message } from '../Message/Message';
 import { SendMessage } from '../SendMessage/SendMessage';
 
 export function Chat() {
-    const [messages, setMessages] = useState(null);
+    const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         setMessages(demoData.messages);
     }, []);
 
+    const createMessage = async (message) => {
+        setMessages((prevState) => [
+            ...prevState,
+            {
+                chatId: 123123,
+                userId: 112,
+                type: 0,
+                text: message,
+                sentAt: 1690558179166,
+                read: [],
+            },
+        ]);
+        return;
+    };
+
     return (
         <section className={styles.container}>
             {messages?.map((message) => (
-                <Message message={message} />
+                <Message key={message.id} message={message} />
             ))}
-            <SendMessage />
+            <SendMessage createMessage={createMessage} />
         </section>
     );
 }

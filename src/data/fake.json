@@ -27,6 +27,7 @@
     ],
     "messages": [
         {
+            "id": 1,
             "chatId": 123123,
             "userId": 112,
             "type": 0,
@@ -35,6 +36,7 @@
             "read": []
         },
         {
+            "id": 2,
             "chatId": 123223,
             "userId": 111,
             "type": 0,
