@@ -39,6 +39,14 @@
 
 .sentAt {
     font-size: 0.7rem;
-    margin-top: 10px;
+    margin-top: 7px;
     color: var(--message-sent-at-dark);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.checkLogo {
+    width: 20px;
+    height: 20px;
 }

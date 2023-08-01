@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './message.module.css';
+import { BsCheck } from 'react-icons/bs';
 
 export function Message({ message }) {
     const demoUserId = 111;
@@ -15,7 +16,10 @@ export function Message({ message }) {
         <div className={styles.messageContent + ' ' + ownMessage}>
             <span>{message.text}</span>
             <div className={styles.messageTriangle}></div>
-            <div className={styles.sentAt}>{formattedSentAt}</div>
+            <div className={styles.sentAt}>
+                {formattedSentAt}
+                <BsCheck className={styles.checkLogo} />
+            </div>
         </div>
     );
 }
