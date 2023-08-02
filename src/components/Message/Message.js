@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './message.module.css';
 import { BsCheck } from 'react-icons/bs';
 
-export function Message({ message }) {
+export function Message({ message, isNewMessageChain }) {
     const demoUserId = 111;
 
     const isUser = demoUserId === message.userId;
@@ -15,7 +15,7 @@ export function Message({ message }) {
     return (
         <div className={styles.messageContent + ' ' + ownMessage}>
             <span>{message.text}</span>
-            <div className={styles.messageTriangle}></div>
+            {isNewMessageChain ? <div className={styles.messageTriangle}></div> : ''}
             <div className={styles.sentAt}>
                 {formattedSentAt}
                 <BsCheck className={styles.checkLogo} />

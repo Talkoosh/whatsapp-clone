@@ -18,11 +18,15 @@ export function SendMessage({ createMessage }) {
         setMessage('');
     };
 
+    const handleEnterInput = (ev) => {
+        if (ev.key === 'Enter') onSendMessage();
+    };
+
     return (
         <section className={styles.container}>
             <FaRegLaughBeam className={styles.icon} />
             <FiPlus className={styles.icon} />
-            <input onChange={handleInput} value={message} placeholder="Type a message" className={styles.messageInput} />
+            <input onKeyDown={handleEnterInput} onChange={handleInput} value={message} placeholder="Type a message" className={styles.messageInput} />
             {message ? <RiSendPlane2Fill className={styles.icon} onClick={onSendMessage} /> : <BiSolidMicrophone className={styles.icon} />}
         </section>
     );

@@ -28,8 +28,8 @@ export function Chat() {
 
     return (
         <section className={styles.container}>
-            {messages?.map((message) => (
-                <Message key={message.id} message={message} />
+            {messages?.map((message, index) => (
+                <Message isNewMessageChain={messages[index - 1]?.userId !== messages[index]?.userId} key={message.id} message={message} />
             ))}
             <SendMessage createMessage={createMessage} />
         </section>
