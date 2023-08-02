@@ -20,7 +20,7 @@ body,
 /* TEXT SIZES */
 :root {
     --text-heading-size: 0.9rem;
-    --text-regular-size: 0.7rem;
+    --text-regular-size: 0.8rem;
 }
 
 /* COLORS */
@@ -31,6 +31,7 @@ body,
     --text-regular-color-light: grey;
     --chat-preview-hover-light: rgb(175, 171, 171);
     --chat-preview-hover-dark: #2a3942;
+    --chat-preview-last-message-dark: grey;
     --message-own-color: #015c4b;
     --layout-general: #1f2c33;
     --message-text: #293840;

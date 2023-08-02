@@ -12,19 +12,21 @@ export function ChatPreview({ chat }) {
         <>
             {chat ? (
                 <div className={styles.container}>
-                    <div className={styles.preview}>
+                    <div className={styles.chatImg}>
                         <img src={chat.imgSrc} />
-                        <div className={styles.previewText}>
-                            <h3 className={styles.chatName}>{chat.name}</h3>
-                            <span className={styles.lastMessageContainer}>
-                                <BsCheckAll color="grey" />
-                                <h5 className={styles.lastMessageText}>{chat.lastMessage?.text}</h5>
-                            </span>
-                        </div>
                     </div>
-                    <div className={styles.hourAndArrowContainer}>
-                        <span className={styles.sentAt}>{sentAt}</span>
-                        <AiOutlineDown color="grey" className={styles.downArrow} />
+                    <div className={styles.textPreview}>
+                        <span className={styles.firstRow}>
+                            <h3 className={styles.chatName}>{chat.name}</h3>
+                            <span className={styles.sentAt}>{sentAt}</span>
+                        </span>
+                        <span className={styles.secondRow}>
+                            <span className={styles.lastMessage}>
+                                <BsCheckAll className={styles.checkIcon} color="grey" />
+                                <span className={styles.lastMessageText}>{chat.lastMessage?.text}</span>
+                            </span>
+                            <AiOutlineDown color="grey" className={styles.downArrow} />
+                        </span>
                     </div>
                 </div>
             ) : (

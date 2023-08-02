@@ -4,9 +4,11 @@
 }
 
 .chatList {
-    flex-grow: 1;
+    /* flex-gro/w: 1; */
+    width: 45%;
 }
 
 .chat {
-    flex-grow: 10;
+    /* flex-grow: 300; */
+    width: 100%;
 }

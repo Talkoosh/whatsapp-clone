@@ -1,44 +1,60 @@
+/* TODO: Fix text overflow */
+
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 20px 10px;
-    height: fit-content;
+    max-width: 100%;
     position: relative;
 }
 
-/* .container::after {
+.chatImg {
+    padding: 0 13px;
+}
+
+.textPreview {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.textPreview::after {
     content: '';
-    width: 81%;
+    width: 100%;
     height: 1px;
-    background-color: white;
+    border-bottom: 1px solid #222d34;
     position: absolute;
     bottom: 0;
-    right: 5px;
-} */
+}
+
+.container:hover .textPreview::after {
+    display: none;
+}
+
+.firstRow,
+.secondRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lastMessage {
+    display: flex;
+    align-items: center;
+}
 
 .container:hover {
     cursor: pointer;
     background-color: var(--chat-preview-hover-dark);
 }
 
-.preview {
-    display: flex;
-    align-items: center;
-}
-
-.previewText {
-    text-align: left;
-    margin-left: 5px;
-}
-
 .chatName,
 .lastMessageText {
-    width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 5px;
+    margin: 5px 0;
     color: white;
 }
 
@@ -47,17 +63,12 @@
     color: var(--text-heading-color-dark);
 }
 
-.lastMessageContainer {
-    display: flex;
-    align-items: center;
-}
-
 .lastMessageText {
     font-size: var(--text-regular-size);
-    color: var(--text-regular-color-light);
+    color: var(--chat-preview-last-message-dark);
 }
 
-.container img {
+.chatImg img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -70,16 +81,7 @@
     font-size: 0.8rem;
 }
 
-.hourAndArrowContainer {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 .downArrow {
-    margin: 5px 0;
     transform: translateX(100%);
     opacity: 0;
 }
@@ -88,4 +90,9 @@
     opacity: 1;
     transform: translateX(0);
     transition: transform 0.08s ease-in, opacity 0.08s;
+}
+
+.checkIcon {
+    transform: scale(1.2);
+    margin-inline-end: 5px;
 }
