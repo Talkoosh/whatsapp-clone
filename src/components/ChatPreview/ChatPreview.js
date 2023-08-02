@@ -23,7 +23,7 @@ export function ChatPreview({ chat }) {
                         </div>
                     </div>
                     <div className={styles.hourAndArrowContainer}>
-                        <p className={styles.sentAt}>{sentAt}</p>
+                        <span className={styles.sentAt}>{sentAt}</span>
                         <AiOutlineDown color="grey" className={styles.downArrow} />
                     </div>
                 </div>

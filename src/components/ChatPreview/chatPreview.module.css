@@ -3,11 +3,23 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 10px;
+    height: fit-content;
+    position: relative;
 }
+
+/* .container::after {
+    content: '';
+    width: 81%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+} */
 
 .container:hover {
     cursor: pointer;
-    background-color: var(--hover-light);
+    background-color: var(--chat-preview-hover-dark);
 }
 
 .preview {
@@ -27,11 +39,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 5px;
+    color: white;
 }
 
 .chatName {
     font-size: var(--text-heading-size);
-    color: var(--text-heading-color-light);
+    color: var(--text-heading-color-dark);
 }
 
 .lastMessageContainer {
@@ -53,15 +66,20 @@
 .sentAt {
     font-size: var(--text-regular-size);
     color: var(--text-regular-color-light);
+    margin: 5px 0;
+    font-size: 0.8rem;
 }
 
 .hourAndArrowContainer {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .downArrow {
+    margin: 5px 0;
     transform: translateX(100%);
     opacity: 0;
 }

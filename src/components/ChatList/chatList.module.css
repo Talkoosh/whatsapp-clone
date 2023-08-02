@@ -1,5 +1,7 @@
 .container {
     border: 1px solid black;
     height: 100%;
-    /* padding: 10px; */
+    background-color: var(--chat-list-background-dark);
+    display: flex;
+    flex-direction: column;
 }

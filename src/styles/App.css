@@ -27,10 +27,13 @@ body,
 
 :root {
     --text-heading-color-light: black;
+    --text-heading-color-dark: white;
     --text-regular-color-light: grey;
-    --hover-light: rgb(175, 171, 171);
+    --chat-preview-hover-light: rgb(175, 171, 171);
+    --chat-preview-hover-dark: #2a3942;
     --message-own-color: #015c4b;
     --layout-general: #1f2c33;
     --message-text: #293840;
     --message-sent-at-dark: #a3beb7;
+    --chat-list-background-dark: #111b21;
 }
