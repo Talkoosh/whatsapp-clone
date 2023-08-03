@@ -3,12 +3,18 @@ import styles from './chat.module.css';
 import demoData from '../../data/fake.json';
 import { Message } from '../Message/Message';
 import { SendMessage } from '../SendMessage/SendMessage';
+import { ChatHeader } from '../ChatHeader/ChatHeader';
 
 export function Chat() {
     const [messages, setMessages] = useState([]);
+    const [chat, setChat] = useState([]);
+
+    //TODO: change chatId to state
+    const chatId = 123123;
 
     useEffect(() => {
         setMessages(demoData.messages);
+        setChat(demoData.chats.find((chat) => chat.id === chatId));
     }, []);
 
     const createMessage = async (message) => {
@@ -32,6 +38,7 @@ export function Chat() {
                 <Message isNewMessageChain={messages[index - 1]?.userId !== messages[index]?.userId} key={message.id} message={message} />
             ))}
             <SendMessage createMessage={createMessage} />
+            <ChatHeader chat={chat} />
         </section>
     );
 }

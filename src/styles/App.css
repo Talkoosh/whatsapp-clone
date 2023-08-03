@@ -37,4 +37,6 @@ body,
     --message-text: #293840;
     --message-sent-at-dark: #a3beb7;
     --chat-list-background-dark: #111b21;
+    --chat-header-dark: #1f2c33;
+    --chat-header-icons-dark: #aebac1;
 }
