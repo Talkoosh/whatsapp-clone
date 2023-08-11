@@ -68,12 +68,6 @@
     color: var(--chat-preview-last-message-dark);
 }
 
-.chatImg img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
 .sentAt {
     font-size: var(--text-regular-size);
     color: var(--text-regular-color-light);

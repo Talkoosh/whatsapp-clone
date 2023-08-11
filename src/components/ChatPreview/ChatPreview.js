@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsCheckAll } from 'react-icons/bs';
 import { AiOutlineDown } from 'react-icons/ai';
+import { ProfilePicture } from '../ProfilePicture/ProfilePicture.js';
 import styles from './chatPreview.module.css';
 
 export function ChatPreview({ chat }) {
@@ -13,7 +14,7 @@ export function ChatPreview({ chat }) {
             {chat ? (
                 <div className={styles.container}>
                     <div className={styles.chatImg}>
-                        <img src={chat.imgSrc} />
+                        <ProfilePicture size="lg" src={chat.imgSrc} />
                     </div>
                     <div className={styles.textPreview}>
                         <span className={styles.firstRow}>
