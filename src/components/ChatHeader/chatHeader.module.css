@@ -8,6 +8,7 @@
     background-color: var(--chat-header-dark);
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .chatImg {
