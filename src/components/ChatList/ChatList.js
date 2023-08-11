@@ -13,7 +13,7 @@ export function ChatList() {
 
     return (
         <section className={styles.container}>
-            <ChatListHeader></ChatListHeader>
+            <ChatListHeader />
             {chats?.map((chat) => (
                 <ChatPreview key={chat.id} chat={chat} />
             ))}
